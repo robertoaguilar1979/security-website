@@ -1,0 +1,106 @@
+@import "components/normalize";
+@import "components/colors";
+@import "components/typography";
+@import "components/utilities";
+@import "components/shadow";
+
+@import "components/navbar";
+@import "components/buttons";
+
+
+
+header {
+    background-color: #FAFAFA;
+    height: 100vh;
+}
+
+nav {
+    background-color: inherit;
+
+    img {
+        height: 30px;
+    }
+
+    a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+
+    a:hover {
+        color: rgba(19, 18, 18, 0.80);
+    }
+
+    .left {
+        margin-left: 2em;
+    }
+
+    span {
+        font-size: inherit;
+        color: inherit;
+        font-weight: 700;
+        line-height: 36px
+    }
+
+    .btn {
+        border-radius: 4px;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 2em;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.hero-area {
+    display: flex;
+    position: relative;
+
+    .text {
+        display: flex;
+
+        & .text-area {
+            max-width: 700px;
+            z-index: 3;
+            margin-top: 13em;
+
+            & h1 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            & p {
+                font-weight: 600;
+                font-size: 1.9rem;
+                color: $aliceblue;
+                margin-bottom: .5em;
+            }
+
+            & a {
+                color: $aliceblue;
+
+            }
+
+
+        }
+    }
+
+    .blob {
+        width: 900px;
+        left: -130px;
+        position: absolute;
+    }
+
+
+    .svg-lady {
+        width: 650px;
+        right: -125px;
+        position: absolute;
+    }
+
+
+
+}
+
+@import "components/breakPoints";
