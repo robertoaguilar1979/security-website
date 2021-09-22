@@ -8,6 +8,7 @@
 @import "components/buttons";
 
 
+///////////******** hero area  *********/////////////////
 
 header {
     background-color: #FAFAFA;
@@ -56,6 +57,7 @@ nav {
 .hero-area {
     display: flex;
     position: relative;
+    margin-top: 4em;
 
     .text {
         display: flex;
@@ -79,7 +81,14 @@ nav {
 
             & a {
                 color: $aliceblue;
+                background: $royalblue;
 
+            }
+
+            & a:hover {
+                background: $gold;
+                color: $darkslategray;
+                font-weight: 600;
             }
 
 
@@ -102,5 +111,50 @@ nav {
 
 
 }
+
+///////////******** about-us section  ********//////////////////
+
+#about-us {
+
+    h1 {
+        text-align: center;
+        color: $h1-section-color;
+        font-size: $h1-section-font;
+        margin-top: 1.5em;
+    }
+
+    .about-us-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4em;
+    }
+
+    .text {
+        h2 {
+            font-size: 3rem;
+            min-width: 700px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-top: 1em;
+            max-width: 600px;
+        }
+    }
+
+    .svg-firewall {
+        min-width: 575px;
+    }
+
+
+}
+
+
+
+
+
+
+
 
 @import "components/breakPoints";

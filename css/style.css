@@ -22,7 +22,7 @@ img {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', serif;
   color: #181818;
 }
 
@@ -37,7 +37,7 @@ h6 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', serif;
   line-height: 1.4;
 }
 
@@ -97,6 +97,12 @@ p {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 601px) {
@@ -375,6 +381,7 @@ nav .hamburger {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-top: 4em;
 }
 
 .hero-area .text {
@@ -403,6 +410,13 @@ nav .hamburger {
 
 .hero-area .text .text-area a {
   color: #f0f6fc;
+  background: #1f6feb;
+}
+
+.hero-area .text .text-area a:hover {
+  background: #f6b73e;
+  color: #21262d;
+  font-weight: 600;
 }
 
 .hero-area .blob {
@@ -415,6 +429,41 @@ nav .hamburger {
   width: 650px;
   right: -125px;
   position: absolute;
+}
+
+#about-us h1 {
+  text-align: center;
+  color: #3F4959;
+  font-size: 2rem;
+  margin-top: 1.5em;
+}
+
+#about-us .about-us-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4em;
+}
+
+#about-us .text h2 {
+  font-size: 3rem;
+  min-width: 700px;
+}
+
+#about-us .text p {
+  font-size: 1.1rem;
+  margin-top: 1em;
+  max-width: 600px;
+}
+
+#about-us .svg-firewall {
+  min-width: 575px;
 }
 
 @media (max-width: 1650px) {
@@ -433,6 +482,15 @@ nav .hamburger {
   .hero-area #main-para {
     font-size: 1.25rem;
   }
+  #about-us .text h2 {
+    min-width: unset;
+  }
+  #about-us .text p {
+    max-width: unset;
+  }
+  #about-us .svg-firewall {
+    min-width: 500px;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -445,6 +503,7 @@ nav .hamburger {
   }
   .hero-area #text-area {
     width: 475px;
+    margin-top: 10em;
   }
   .hero-area .blob {
     width: 650px;
@@ -472,6 +531,7 @@ nav .hamburger {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 0;
   }
   .hero-area #svg-lady {
     right: unset;
@@ -493,6 +553,24 @@ nav .hamburger {
   }
   .hero-area #main-para {
     font-size: 1.2rem;
+  }
+  #about-us .about-us-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #about-us .about-us-column .text h2 {
+    min-width: unset;
   }
 }
 
@@ -572,6 +650,7 @@ nav .hamburger {
     right: unset;
     position: relative;
     margin-top: 8em;
+    width: 400px;
   }
   .hero-area #text-area {
     width: unset;
@@ -596,6 +675,37 @@ nav .hamburger {
   .hero-area .main-btn {
     display: block;
     margin: 0 1em;
+  }
+  #about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-us .about-us-column {
+    margin-top: 2em;
+    margin: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-us .text h2 {
+    min-width: unset;
+    font-size: 1.75rem;
+  }
+  #about-us .text p {
+    max-width: unset;
+    font-size: 1.1rem;
+  }
+  #about-us .svg-firewall {
+    min-width: 390px;
   }
 }
 
@@ -635,7 +745,7 @@ nav .hamburger {
     right: unset;
     position: relative;
     margin-top: 4em;
-    width: 337px;
+    width: 375px;
   }
   .hero-area #text-area {
     width: unset;
@@ -656,10 +766,20 @@ nav .hamburger {
   .hero-area #main-para {
     font-size: 1.15rem;
     padding-left: .7em;
+    padding-right: 1em;
   }
   .hero-area .main-btn {
     display: block;
     margin: 0 1em;
+  }
+  #about-us .text h2 {
+    font-size: 1.65rem;
+  }
+  #about-us .text p {
+    font-size: 1rem;
+  }
+  #about-us .svg-firewall {
+    min-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
