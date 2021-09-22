@@ -210,13 +210,14 @@ nav {
                 align-items: center;
                 text-align: center;
                 background-color: $white;
-                height: 300px;
+                height: 275px;
                 width: 250px;
                 border-radius: 15px;
 
                 h1 {
                     font-size: 2.5rem;
                     margin-bottom: .05em;
+                    letter-spacing: 1px;
                 }
 
                 &>p {
@@ -287,6 +288,13 @@ nav {
                 .business-mark {
                     color: $business;
                 }
+
+
+
+            }
+
+            .align-left:nth-child(3) p:nth-child(5) {
+                margin-bottom: 1em;
             }
         }
 
@@ -294,5 +302,67 @@ nav {
     }
 
 }
+
+/////*********** contact us section ***//////
+
+
+#contact-us {
+    background-color: #F2FAFF;
+    padding-bottom: 4em;
+
+
+    h1 {
+        margin-bottom: 2.5em;
+    }
+
+    .contact-us-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+        padding: 3em;
+
+        .card {
+            width: 300px;
+            height: 425px;
+            background-color: $white;
+            padding: 1em;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h3,
+            .svg-div,
+            p,
+            a {
+                margin-bottom: 1em;
+            }
+
+            i {
+                margin-right: .5em;
+                color: $gold;
+            }
+
+            .btn {
+                background-color: $gold;
+                color: #F2FAFF;
+                padding: 0em 3.5em;
+
+            }
+
+            .btn:hover {
+                background-color: $darkslategray;
+                color: #F2FAFF;
+
+            }
+        }
+    }
+}
+
+
+
+
 
 @import "components/breakPoints";

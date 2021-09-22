@@ -189,7 +189,14 @@
 
     }
 
-
+    #contact-us {
+        .contact-us-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
 }
 
