@@ -75,3 +75,21 @@
         width: 70%;
     }
 }
+
+
+
+
+
+
+//******** website Utilities  *******////////
+
+
+#about-us h1,
+#choose-plan h1 {
+    text-align: center;
+    color: $h1-section-color;
+    font-size: $h1-section-font;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.44em;
+}
