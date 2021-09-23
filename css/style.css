@@ -387,6 +387,10 @@ nav .nav-open {
   cursor: pointer;
 }
 
+nav .nav-close {
+  display: none;
+}
+
 .hero-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1060,6 +1064,9 @@ footer .copyright a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .upScroll {
+    padding: .45em;
   }
 }
 
