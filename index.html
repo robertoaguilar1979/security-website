@@ -11,23 +11,29 @@
     <title>Web Lock</title>
 </head>
 <body>
-    <header>
-        <nav class="container" id="nav-container">
+    <header id="home">
+        <nav class="container " id="nav-container">
             <a href="index.html"><img class="logo" src="img/webLockLogo.png" alt="logo"></a>
-            <i class="fas fa-bars hamburger"></i>
-            <div class="nav-link">
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="#about-us"><li>About</li></a>
-                    <a href="#contact-us"><li>Contact</li></a>
+            <!-- hamburger  -->
+            <button class="nav-open">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- mobile and desktop navigation -->
+            <div class="mobile-nav nav">
+                <!-- mobile close button -->
+                <button class="nav-close">&times;</button>
+                <ul class="nav-ul">
+                    <a href="index.html" class="nav-item"><li>Home</li></a>
+                    <a href="#about-us" class="nav-item"><li>About</li></a>
+                    <a href="#contact-us" class="nav-item"><li>Contact</li></a>
                     <span>|</span>
-                    <a  class="left" href="#signIn"><li>Sign In</li></a>
-                    <a href="#signUp" class="btn"><li>Sign Up</li></a>
+                    <a  class="left nav-item" href="#signIn"><li>Sign In</li></a>
+                    <a href="#signUp" class="btn nav-item"><li>Sign Up</li></a>
                 </ul>
             </div>
         </nav>
         
-            <div class="hero-area container">
+        <div class="hero-area container">
                 <div class="text">
                     <div class="text-area" id="text-area">
                         <h1 id="main-h1">Powerful Website Security, and Much More.</h1>
@@ -130,7 +136,7 @@
                         </g>
                     </svg>
                 </div>
-            </div>
+        </div>
     </header>
     <section id="about-us" class="section">
         <h1 >About Us</h1>
@@ -306,5 +312,10 @@
             <a href="#privacy">Privacy</a>
         </div>
     </footer>
+
+    <!---========== up button ===================--->
+    <a href="#home"><i class="fas fa-arrow-up upScroll"></i></a>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

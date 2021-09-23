@@ -46,12 +46,15 @@ nav {
         border-radius: 4px;
     }
 
-    .hamburger {
+    .nav-open {
         display: none;
         font-size: 2em;
         background-color: transparent;
         cursor: pointer;
     }
+
+
+
 }
 
 .hero-area {
@@ -111,6 +114,8 @@ nav {
 
 
 }
+
+.open {}
 
 ///////////******** about-us section  ********//////////////////
 
@@ -420,5 +425,59 @@ footer {
     }
 
 }
+
+//***** up scroll button*****///////
+.upScroll {
+    background-color: $darkslategray;
+    border: none;
+    padding: .55em;
+    font-size: 1.65rem;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none !important;
+    color: $white;
+}
+
+.visible {
+    display: block !important;
+    ;
+    animation: fadeIn 2s;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+// @keyframes fadeOut {
+//     from {
+//         opacity: 1;
+//     }
+
+//     to {
+//         opacity: 0;
+//     }
+// }
+
+// @media (max-width:945px) {
+//     .upScroll {
+//         padding: .55em;
+//     }
+// }
+
+
+
+
+
 
 @import "components/breakPoints";
