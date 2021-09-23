@@ -4,6 +4,7 @@
 @import "components/utilities";
 @import "components/shadow";
 
+
 @import "components/navbar";
 @import "components/buttons";
 
@@ -120,6 +121,9 @@ nav {
 }
 
 .open {}
+
+@import "components/animations";
+
 
 ///////////******** about-us section  ********//////////////////
 
@@ -463,21 +467,16 @@ footer {
     }
 }
 
-// @keyframes fadeOut {
-//     from {
-//         opacity: 1;
-//     }
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
 
-//     to {
-//         opacity: 0;
-//     }
-// }
+    to {
+        opacity: 0;
+    }
+}
 
-// @media (max-width:945px) {
-//     .upScroll {
-//         padding: .55em;
-//     }
-// }
 
 
 

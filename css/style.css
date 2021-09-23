@@ -446,6 +446,183 @@ nav .nav-close {
   position: absolute;
 }
 
+#plant {
+  -webkit-animation: plantXDirection 1500ms infinite linear alternate;
+          animation: plantXDirection 1500ms infinite linear alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes plantXDirection {
+  0% {
+    -webkit-transform: rotate(-0.15deg);
+            transform: rotate(-0.15deg);
+  }
+  100% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+}
+
+@keyframes plantXDirection {
+  0% {
+    -webkit-transform: rotate(-0.15deg);
+            transform: rotate(-0.15deg);
+  }
+  100% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+}
+
+#tablet {
+  margin: auto;
+  display: block;
+  text-align: center;
+  animation: scale 1s infinite ease-in-out alternate-reverse;
+  transform-box: fill-box;
+}
+
+#shield {
+  margin: auto;
+  display: block;
+  text-align: center;
+  animation: scale2 1s infinite ease-in-out alternate-reverse;
+  transform-box: fill-box;
+}
+
+#ghost_1 {
+  z-index: 3;
+  animation: floatingXLeft 8s infinite ease-in-out alternate-reverse;
+  position: absolute;
+}
+
+#ghost_2 {
+  z-index: 4;
+  animation: floatingXRight 5s infinite ease-in-out alternate-reverse;
+  position: absolute;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scale2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes floatingXRight {
+  0% {
+    -webkit-transform: translate(-45px, 0px);
+            transform: translate(-45px, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(30px, 0px);
+            transform: translate(30px, 0px);
+  }
+}
+
+@keyframes floatingXRight {
+  0% {
+    -webkit-transform: translate(-45px, 0px);
+            transform: translate(-45px, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(30px, 0px);
+            transform: translate(30px, 0px);
+  }
+}
+
+@-webkit-keyframes floatingXLeft {
+  0% {
+    -webkit-transform: translate(-55px);
+            transform: translate(-55px);
+  }
+  50% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(45px, 0px);
+            transform: translate(45px, 0px);
+  }
+}
+
+@keyframes floatingXLeft {
+  0% {
+    -webkit-transform: translate(-55px);
+            transform: translate(-55px);
+  }
+  50% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(45px, 0px);
+            transform: translate(45px, 0px);
+  }
+}
+
 #about-us {
   background-image: url(../img/about-us-background.svg);
 }
@@ -802,6 +979,24 @@ footer .copyright a {
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 

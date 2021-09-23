@@ -33,7 +33,7 @@ upArrow.addEventListener("click", () => {
 //makes up arrow appear when its down 700px
 window.addEventListener("scroll", e => {
 
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         upArrow.classList.add("visible");
     } else {
         upArrow.classList.remove("visible");
