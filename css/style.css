@@ -664,9 +664,9 @@ nav .nav-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -698,13 +698,12 @@ nav .nav-close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 300px;
-  height: 585px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   background-color: #EAF2FA;
   border-radius: 8px;
+  padding: 1.75em;
 }
 
 #choose-plan .price-cards .card .basic {
@@ -758,9 +757,9 @@ nav .nav-close {
 }
 
 #choose-plan .price-cards .card .price p:nth-child(4) {
-  margin-top: .75em;
+  margin-top: 1.5em;
   line-height: 1;
-  font-size: .85rem;
+  font-size: .70rem;
   font-weight: 600;
 }
 
@@ -795,7 +794,6 @@ nav .nav-close {
       -ms-grid-row-align: start;
       align-self: start;
   margin-top: 2em;
-  margin-left: 2em;
 }
 
 #choose-plan .price-cards .card .align-left p,
@@ -839,9 +837,9 @@ nav .nav-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -850,10 +848,8 @@ nav .nav-close {
 }
 
 #contact-us .contact-us-cards .card {
-  width: 300px;
-  height: 425px;
   background-color: #FFFFFF;
-  padding: 1em;
+  padding: 3.5em;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1193,6 +1189,9 @@ footer .copyright a {
   #about-us .about-us-column .text h2 {
     min-width: unset;
   }
+  #choose-plan .price-cards {
+    gap: 3em;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1204,7 +1203,31 @@ footer .copyright a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 4em;
+  }
+  #choose-plan .price-cards .card {
+    padding: 1.25em;
+  }
+  #contact-us .contact-us-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1244,21 +1267,6 @@ footer .copyright a {
   }
   .hero-area #main-para {
     font-size: 1.2rem;
-  }
-  #contact-us .contact-us-cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .upScroll {
     padding: .45em;

@@ -225,6 +225,12 @@
 
     }
 
+    #choose-plan {
+        .price-cards {
+            gap: 3em;
+        }
+    }
+
 }
 
 // price plan section
@@ -234,7 +240,22 @@
         .price-cards {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 4em;
+
+            .card {
+                padding: 1.25em;
+            }
+        }
+    }
+
+    #contact-us {
+        .contact-us-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -280,14 +301,7 @@
 
     }
 
-    #contact-us {
-        .contact-us-cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    }
+
 
 
     .upScroll {
